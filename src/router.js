@@ -3,6 +3,7 @@ import HomePage from './views/HomePage.vue';
 import ItemCardapio from './components/ItemCardapio.vue';
 import MesaAtendimento from './components/MesaAtendimento.vue';
 import ItemMesa from './components/ItemMesa.vue';
+import DespesaEmpresa from './components/DespesaEmpresa.vue';
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/pedido',
     name: 'pedido',
     component: ItemMesa,
+  },
+  {
+    path: '/despesa',
+    name: 'despesas',
+    component: DespesaEmpresa,
   },
 //   {
 //     path: '/sobre',

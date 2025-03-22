@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-3" id="noprint">
             <div class="card">
-              <div class="card-header">
+              <div class="card-header bg-info">
                 <h2>{{ mesaEditando ? "Editar Mesa" : "Adicionar Mesa" }}</h2>
               </div>
               <div class="card-body">
@@ -48,7 +48,7 @@
                     </select>
                   </div>
                   <button
-                    class="form-control mt-4 text-light bg-success"
+                    class="form-control mt-4 text-dark bg-info"
                     type="submit"
                   >
                     {{ mesaEditando ? "Atualizar Mesa" : "Adicionar Mesa" }}

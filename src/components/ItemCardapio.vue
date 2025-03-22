@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-md-3" id="noprint">
             <div class="card">
-              <div class="card-header">
+              <div class="card-header bg-warning">
                 <h2>{{ itemEditando ? "Editar Item" : "Adicionar Item" }}</h2>
               </div>
               <div class="card-body">
@@ -44,7 +44,7 @@
                     />
                   </div>
                   <button
-                    class="form-control mt-4 text-light bg-success"
+                    class="form-control mt-4 text-dark bg-warning"
                     type="submit"
                   >
                     {{ itemEditando ? "Atualizar Item" : "Adicionar Item" }}

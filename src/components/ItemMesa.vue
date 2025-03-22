@@ -6,7 +6,7 @@
           <!-- Formulário para adicionar ou editar item -->
           <div class="col-md-3" id="noprint">
             <div class="card mb-2">
-              <div class="card-header">
+              <div class="card-header text-light bg-success">
                 <h2>{{ itemMesaEditando ? "Editar Pedido" : "Adicionar Pedido" }}</h2>
               </div>
               <div class="card-body">
@@ -65,7 +65,7 @@
           <div class="col-md-9">
             <div class="card">
               <div class="card-header text-right">
-                <h2>Itens da Mesa</h2>
+                <h2>Pedidos das Mesas</h2>
               </div>
               <div class="card-body">
                 <div class="table-responsive">
