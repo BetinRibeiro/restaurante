@@ -60,7 +60,8 @@
           <div class="col-md-9">
             <div class="card">
               <div class="card-header text-right">
-                <h2>Mesas Ativas</h2>
+                <h2>Mesas Ativas ({{ mesas.length }})</h2>
+
               </div>
               <div class="card-body">
                 <div class="table-responsive">

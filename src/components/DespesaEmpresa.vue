@@ -56,7 +56,7 @@
           <div class="col-md-9">
             <div class="card">
               <div class="card-header text-right">
-                <h2>Despesas Registradas</h2>
+                <h2>Despesas Registradas ({{ despesas.length }})</h2>
               </div>
               <div class="card-body">
                 <div class="table-responsive">

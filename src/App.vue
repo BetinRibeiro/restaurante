@@ -29,6 +29,10 @@
             <li class="nav-item">
               <router-link to="/despesa" class="nav-link">Despesas</router-link>
             </li>
+            <!-- Navegação para o Contato -->
+            <li class="nav-item">
+              <router-link to="/dados" class="nav-link">Dados</router-link>
+            </li>
           </ul>
         </div>
       </div>
