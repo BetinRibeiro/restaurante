@@ -1,19 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "baseUrl": "./",
-    "moduleResolution": "node",
+    "target": "es5",  // Define o alvo do código compilado para ES5 para garantir compatibilidade com navegadores mais antigos
+    "module": "esnext",  // Usando módulos ECMAScript modernos
+    "baseUrl": "./",  // Base do caminho de módulos relativos, que será a raiz do projeto
+    "moduleResolution": "node",  // Resolução de módulos de acordo com o Node.js, que é a abordagem padrão
     "paths": {
       "@/*": [
-        "src/*"
+        "src/*"  // Alias para facilitar a importação de arquivos da pasta src
       ]
     },
     "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
+      "esnext",  // Usar os recursos mais recentes do ECMAScript
+      "dom",  // Adiciona suporte para o ambiente DOM (Document Object Model)
+      "dom.iterable",  // Adiciona suporte para iteração em objetos DOM
+      "scripthost"  // Suporte para JavaScript executado no host (como Node.js)
     ]
   }
 }
