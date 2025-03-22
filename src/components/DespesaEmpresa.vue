@@ -139,9 +139,9 @@
         this.itemEditando = item.chave;
       },
       salvarDespesa(item) {
-        let despesas = JSON.parse(localStorage.getItem("despesas")) || [];
+        let despesas = JSON.parse(localStorage.getItem("despesasEmpresa")) || [];
         despesas.push(item);
-        localStorage.setItem("despesas", JSON.stringify(despesas));
+        localStorage.setItem("despesasEmpresa", JSON.stringify(despesas));
       },
       atualizarDespesa() {
         if (this.itemEditando) {
@@ -152,11 +152,11 @@
             valor: parseFloat(this.valor),
           };
   
-          let despesas = JSON.parse(localStorage.getItem("despesas")) || [];
+          let despesas = JSON.parse(localStorage.getItem("despesasEmpresa")) || [];
           despesas = despesas.map((item) =>
             item.chave === this.itemEditando ? despesaAtualizada : item
           );
-          localStorage.setItem("despesas", JSON.stringify(despesas));
+          localStorage.setItem("despesasEmpresa", JSON.stringify(despesas));
   
           this.itemEditando = null;
           this.nome = "";
@@ -166,16 +166,16 @@
         }
       },
       excluirDespesa(chave) {
-        let despesas = JSON.parse(localStorage.getItem("despesas")) || [];
+        let despesas = JSON.parse(localStorage.getItem("despesasEmpresa")) || [];
         despesas = despesas.filter((item) => item.chave !== chave);
-        localStorage.setItem("despesas", JSON.stringify(despesas));
+        localStorage.setItem("despesasEmpresa", JSON.stringify(despesas));
         this.carregarDespesas();
       },
       carregarDespesas() {
         this.despesas = this.consultarDespesas();
       },
       consultarDespesas() {
-        return JSON.parse(localStorage.getItem("despesas")) || [];
+        return JSON.parse(localStorage.getItem("despesasEmpresa")) || [];
       },
       formatarValor(valor) {
         return valor.toLocaleString("pt-BR", {

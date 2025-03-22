@@ -62,7 +62,7 @@
           </div>
           <br>
           <!-- Tabela de itens da mesa -->
-          <div class="col-md-9">
+          <div class="col-md-8">
             <div class="card">
               <div class="card-header text-right">
                 <h2 text-right>Pedidos das Mesas ({{ itensMesa.length }})</h2>
