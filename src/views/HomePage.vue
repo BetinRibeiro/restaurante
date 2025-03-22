@@ -39,7 +39,7 @@
                 <p>Sobre os Pedidos</p>
               </div>
               <div class="row py-3">
-                <div class="col-sm-6 col-3 col-xl-3">
+                <div class="col-sm-6 col-xl-3">
                   <div class="bg-light border rounded d-flex align-items-center justify-content-between p-4 m-1">
                     <i class="fa fa-circle-o-notch  fa-3x text-danger"></i>
                     <div class="ms-3">
